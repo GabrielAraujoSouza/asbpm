@@ -24,9 +24,9 @@ public class Insert {
 		c1.inserirCliente(c);
 		
 		transaction.commit();
-		c1.buscaPorNome(c.getNome());
-		//manager.close();
-		System.out.println(c1.buscaPorId(c.getId()).getStatus().toString()+"  aaa");
+		
+		System.out.println(c1.buscaPorNome(c.getNome()).get(0).getNome());
+		manager.close();
 
 		
 	}
