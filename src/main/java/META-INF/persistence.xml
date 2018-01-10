@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="crud-asbpm">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<properties>
+			<!-- <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/asbpm" />
+			<property name="javax.persistence.jdbc.user" value="root" />
+			<property name="javax.persistence.jdbc.password" value="bender" />
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect" />-->
+			
+			<property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://dba-asbpm.ddns.net;databaseName=ASBPM" />
+            <property name="javax.persistence.jdbc.user" value="estagioASBPM" />
+            <property name="javax.persistence.jdbc.password" value="s3j4b3mv1ndo" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.SQLServerDialect"/> 
+			
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+		</properties>
+	</persistence-unit>
+</persistence>

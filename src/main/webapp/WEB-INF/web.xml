@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>crud-asbpm</display-name>
+  <welcome-file-list>
+    <welcome-file>listar</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>Adicionar</servlet-name>
+    <servlet-class>com.souza.gestaocliente.servlet.AdicionarClienteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Adicionar</servlet-name>
+    <url-pattern>/adicionar</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Listar</servlet-name>
+    <servlet-class>com.souza.gestaocliente.servlet.ListarClienteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Listar</servlet-name>
+    <url-pattern>/listar</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Editar</servlet-name>
+    <servlet-class>com.souza.gestaocliente.servlet.EditarClienteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Editar</servlet-name>
+    <url-pattern>/editar</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Deletar</servlet-name>
+    <servlet-class>com.souza.gestaocliente.servlet.DeletarClienteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Deletar</servlet-name>
+    <url-pattern>/deletar</url-pattern>
+  </servlet-mapping>
+</web-app>
